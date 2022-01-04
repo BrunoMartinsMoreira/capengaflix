@@ -1,7 +1,16 @@
-import "./App.css";
+import React, { useEffect } from "react";
+import TmDbConfig from "./TmDbConfig";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  useEffect(() => {
+    const loadAll = async () => {
+      let list = await TmDbConfig.getHomeList();
+      console.log(list);
+    };
+    loadAll();
+  }, []);
+
+  return <div className="App">Olaaaa</div>;
+};
 
 export default App;

@@ -33,35 +33,35 @@ export default {
         slug: "action",
         title: "Ação",
         itens: await fetchMovies(
-          `/discover/movie?with_genres=28${URL_CONFIG_PARAMS}`,
+          `/discover/movie?with_genres=28&${URL_CONFIG_PARAMS}`,
         ),
       },
       {
         slug: "comedy",
         title: "Comédia",
         itens: await fetchMovies(
-          `/discover/movie?with_genres=35${URL_CONFIG_PARAMS}`,
+          `/discover/movie?with_genres=35&${URL_CONFIG_PARAMS}`,
         ),
       },
       {
         slug: "horror",
         title: "Terror",
         itens: await fetchMovies(
-          `/discover/movie?with_genres=27${URL_CONFIG_PARAMS}`,
+          `/discover/movie?with_genres=27&${URL_CONFIG_PARAMS}`,
         ),
       },
       {
         slug: "romance",
         title: "Romance",
         itens: await fetchMovies(
-          `/discover/movie?with_genres=10749${URL_CONFIG_PARAMS}`,
+          `/discover/movie?with_genres=10749&${URL_CONFIG_PARAMS}`,
         ),
       },
       {
         slug: "documentary",
         title: "Documentários",
         itens: await fetchMovies(
-          `/discover/movie?with_genres=99${URL_CONFIG_PARAMS}`,
+          `/discover/movie?with_genres=99&${URL_CONFIG_PARAMS}`,
         ),
       },
     ];

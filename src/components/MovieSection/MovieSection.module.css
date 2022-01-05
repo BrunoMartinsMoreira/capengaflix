@@ -1,0 +1,18 @@
+.movieSection {
+  margin-bottom: 30px;
+}
+.movieSection h2 {
+  margin: 0px 0px 0px 30px;
+}
+.movieArea {
+  overflow-x: hidden;
+}
+.movieList {
+}
+.movieItem {
+  display: inline-block;
+  width: 200px;
+}
+.movieItem img {
+  width: 100%;
+}

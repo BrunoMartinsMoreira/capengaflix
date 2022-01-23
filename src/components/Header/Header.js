@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Header.module.css";
 import perfil from '../../images/perfil.png';
 
-const Header = () => {
+const Header = ({black}) => {
   return (
-    <header>
+    <header className={black ? styles.blackbg : ''}>
       <div className={styles.logo}>
         <a href="/">
           <img src="https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-6.png" 

@@ -2,24 +2,36 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import MovieSection from "./components/MovieSection/MovieSection";
 import TmDbConfig from "./TmDbConfig";
-//1h5min
+import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie';
+
 const App = () => {
   const [movieList, setMovieList] = useState([]);
+  const [featuredData, setFeaturedData] = useState(null);
 
   useEffect(() => {
     const loadAll = async () => {
       let list = await TmDbConfig.getHomeList();
-      console.log(list);
       setMovieList(list);
+
+      let originals = list.filter(item => item.slug === 'originals');
+      let randomChosenMovie = Math.floor(
+        Math.random() * (originals[0].items.results.length -1)
+      );
+      let chosenMovie = originals[0].items.results[randomChosenMovie];
+      let chosenMovieInfo = await TmDbConfig.getMovieInfo(chosenMovie.id, 'tv');
+
+      setFeaturedData(chosenMovieInfo);
+
     };
     loadAll();
   }, []);
 
   return (
     <div className="App">
+      {featuredData && <FeaturedMovie item={featuredData}/>}
       <section>
         {movieList.map((item, key) => (
-          <MovieSection key={key} title={item.title} items={item.itens} />
+          <MovieSection key={key} title={item.title} items={item.items} />
         ))}
       </section>
     </div>

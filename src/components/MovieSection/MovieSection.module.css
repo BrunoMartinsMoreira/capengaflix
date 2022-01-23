@@ -14,6 +14,7 @@
 .movieItem {
   display: inline-block;
   width: 200px;
+  cursor: pointer;
 }
 .movieItem img {
   width: 100%;

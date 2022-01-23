@@ -3,6 +3,7 @@ import "./App.css";
 import MovieSection from "./components/MovieSection/MovieSection";
 import TmDbConfig from "./TmDbConfig";
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie';
+import Header from "./components/Header/Header";
 
 const App = () => {
   const [movieList, setMovieList] = useState([]);
@@ -28,8 +29,11 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header/>
+
       {featuredData && <FeaturedMovie item={featuredData}/>}
-      <section>
+
+      <section className="main_lists">
         {movieList.map((item, key) => (
           <MovieSection key={key} title={item.title} items={item.items} />
         ))}

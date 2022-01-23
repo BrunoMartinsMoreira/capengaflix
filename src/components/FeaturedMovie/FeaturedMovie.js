@@ -23,7 +23,7 @@ const FeaturedMovie = ({item}) => {
           <div className={styles.featuredInfo}>
             <div className={styles.voteAverage}>{item.vote_average} pontos</div>
             <div className={styles.year}>
-             <strong>Ano de lançamento:</strong> {releaseDate.getFullYear()}
+            {releaseDate.getFullYear()}
             </div>
             <div className={styles.seasons}>
               {
@@ -38,8 +38,8 @@ const FeaturedMovie = ({item}) => {
           </div>
 
           <div className={styles.buttons}>
-            <a href={`/watch/${item.id}`}>▶ Assistir</a> 
-            <a href={`/minha_lista/add/${item.id}`}>+ Minha Lista</a>
+            <a className={styles.play} href={`/watch/${item.id}`}>▶ Assistir</a> 
+            <a className={styles.mylist} href={`/minha_lista/add/${item.id}`}>+ Minha Lista</a>
           </div>
           <div className={styles.genders}>
             <strong>Gêneros:</strong> {

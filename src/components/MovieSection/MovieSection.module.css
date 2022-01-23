@@ -6,8 +6,10 @@
 }
 .movieArea {
   overflow-x: hidden;
+  padding-left: 30px;
 }
 .movieList {
+  width: 9999px;
 }
 .movieItem {
   display: inline-block;
@@ -15,4 +17,11 @@
 }
 .movieItem img {
   width: 100%;
+  border-radius: 5px;
+  transform: scale(0.9);
+  transition: all ease 0.3s;
+}
+.movieItem img:hover {
+  transform: scale(1);
+  box-shadow: 0px 2px 5px 1px #eee;
 }

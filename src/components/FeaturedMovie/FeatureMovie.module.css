@@ -1,0 +1,30 @@
+.featured {
+  height: 90vh;
+  position: relative;
+}
+.featuredVertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+.featuredHorizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+}
+.movieName {
+}
+.featuredInfo {
+}
+.voteAverage {
+}
+.year {
+}
+.seasons {
+}
+.description {
+}
+.buttons {
+}
+.genders {
+}

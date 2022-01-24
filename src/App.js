@@ -4,6 +4,7 @@ import MovieSection from "./components/MovieSection/MovieSection";
 import TmDbConfig from "./TmDbConfig";
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie';
 import Header from "./components/Header/Header";
+//2:25
 
 const App = () => {
   const [movieList, setMovieList] = useState([]);
@@ -56,6 +57,10 @@ const App = () => {
           <MovieSection key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <footer>
+        Projeto baseado no design da Netflix, desenvolvido para fins didáticos.
+      </footer>
     </div>
   );
 };

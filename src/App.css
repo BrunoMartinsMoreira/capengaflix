@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #111;
+  background-color: #151515;
   color: #fefefe;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -14,4 +14,10 @@ h2 {
 }
 .main_lists {
   margin-top: -180px;
+}
+footer {
+  text-align: center;
+  font-size: 25px;
+  color: #999;
+  padding: 20px 0;
 }

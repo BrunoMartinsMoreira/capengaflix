@@ -11,6 +11,7 @@ header {
   padding: 35px 30px 30px 30px;
   background: transparent;
   transition: all ease 0.5s;
+  width: 100vw;
 }
 header.blackbg {
   background-color: #141414;

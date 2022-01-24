@@ -75,3 +75,33 @@
   margin-top: 15px;
   font-size: 18px;
 }
+@media (max-width: 760px) {
+  .featured {
+    height: 90vh;
+  }
+  .movieName {
+    font-size: 40px;
+  }
+  .featuredInfo {
+    font-size: 16px;
+    width: 100vw;
+  }
+  .description {
+    font-size: 14px;
+    max-width: 100%;
+    margin-right: 15px;
+  }
+  .buttons {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .play,
+  .mylist {
+    font-size: 16px;
+  }
+  .genders {
+    font-size: 14px;
+  }
+}

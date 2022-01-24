@@ -5,7 +5,7 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 const MovieSection = ({ title, items }) => {
   const imgUrl = `https://image.tmdb.org/t/p/w300`;
-  const [scrollX, setScrollX] = useState(-500);
+  const [scrollX, setScrollX] = useState(-100);
 
   const handleLeftNavigation = () => {
     let scrollAxisX = scrollX + Math.round(window.innerWidth / 2);

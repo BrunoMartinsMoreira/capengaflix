@@ -51,3 +51,9 @@
 .movieSection:hover .arrowRight {
   opacity: 1;
 }
+@media (max-width: 760px) {
+  .arrowLeft,
+  .arrowRight {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,23 @@
+.spinner {
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+}
+
+.halfSpinner {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #832702;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.5s ease-out 0.5s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

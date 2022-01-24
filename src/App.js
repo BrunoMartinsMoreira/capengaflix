@@ -4,6 +4,7 @@ import MovieSection from "./components/MovieSection/MovieSection";
 import TmDbConfig from "./TmDbConfig";
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie';
 import Header from "./components/Header/Header";
+import Loading from "./components/Loading/Loading";
 //2:25
 
 const App = () => {
@@ -61,6 +62,12 @@ const App = () => {
       <footer>
         Projeto baseado no design da Netflix, desenvolvido para fins didáticos.
       </footer>
+      {
+        movieList.length <= 0 &&
+          <div className="loading">
+            <Loading/>
+          </div>
+      } 
     </div>
   );
 };

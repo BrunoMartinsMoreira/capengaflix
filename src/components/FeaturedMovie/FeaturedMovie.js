@@ -5,8 +5,14 @@ import styles from './FeatureMovie.module.css';
 const FeaturedMovie = ({item}) => {
   let releaseDate = new Date(item.first_air_date);
   let genres = [];
+
   for(let i in item.genres){
     genres.push(item.genres[i].name)
+  }
+
+  let description = item.overview;
+  if(description.length > 300){
+    description = description.substring(0, 300)+'...'
   }
 
   return (
@@ -34,7 +40,7 @@ const FeaturedMovie = ({item}) => {
           </div>
 
           <div className={styles.description}>
-            {item.overview ? item.overview : 'Sem descrição disponível'}
+            {description ? description : 'Sem descrição disponível'}
           </div>
 
           <div className={styles.buttons}>

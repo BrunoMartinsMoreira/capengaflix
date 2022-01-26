@@ -48,7 +48,7 @@ const MovieSection = ({ title, items }) => {
           }}>
           {items.results.length > 0 &&
             items.results.map((item, key) => (
-              <div className={styles.movieItem} key={key}>
+              <div className={styles.movieItem} key={key} onClick={()=> console.log(item.id)}>
                 <img
                   src={`${imgUrl}${item.poster_path}`}
                   alt={item.original_title}
